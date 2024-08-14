@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css" />
+
+  <title>Quiz App</title>
+</head>
+
+<body>
+
+
+  <section class="flex  justify-center items-center w-full h-svh bg-slate-600">
+    <div id="myDiv" class="flex flex-col items-center justify-start w-3/5">
+      <h1 class="text-center p-5 rounded-lg text-3xl font-semibold bg-white">General <span class="text-emerald-500 hover:text-emerald-300 duration-500 hover:tracking-widest">Quiz</span></h1>
+      <div class="w-full mx-auto mt-10">
+        <select id="categories"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected value="">Any Category</option>
+          <option value="9">General Knowledge</option>
+          <option value="27">Animals</option>
+          <option value="19">Science: Mathematics</option>
+          <option value="18">Science: Computers</option>
+          <option value="22">Geography</option>
+        </select>
+      </div>
+      <div class="w-full mx-auto my-5">
+        <select id="difficult"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="w-full mx-auto">
+        <div class="mb-6 relative">
+          <input value="1" type="number" id="quizNumber" placeholder="Quetions Number ..."
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <button id="changeNumberValue"
+            class="p-2 bg-emerald-600 rounded-lg absolute top-1/2 -translate-y-1/2 hover:tracking-wider duration-500 right-2 text-white">change</button>
+        </div>
+      </div>
+      <button id='startQuizBtn' type="button"
+        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 hover:tracking-wider duration-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Start
+        Quiz</button>
+    </div>
+  </section>
+
+  <button class="up">Up</button>
+
+  <script src="./Js/index.js"></script>
+</body>
+
+</html>
